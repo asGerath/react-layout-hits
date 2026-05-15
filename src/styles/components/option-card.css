@@ -29,6 +29,7 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
+    flex-wrap: wrap;
 
     & .option-card__title {
         margin-bottom: 0.8rem;
