@@ -1,5 +1,6 @@
 :root {
   --color-background: #f4f4f4;
+  --color-background-cards: #F8F8F8;
   --color-white: #ffffff;
   --color-dark: #3a3a3a;
   --color-text: #3C3C3C;
@@ -8,11 +9,14 @@
   --color-primary: #DA291C;
   --color-accent: #006B4F;
   --color-white2:#DBDBDB;
-  --color-bg-cards-active:#D7EDEF;
+  --color-bg-cards-active:#EBF4F6;
+  --color-textLabel: #6A6C6C;
+  --color-textPlaceHolder: #BBBBBB;
+  --color-borderCards:#DDDDDD;
 
   --font-primary: Arial, Helvetica, sans-serif;
 
-  --container-width: 106.8rem;
+  --container-width: 120rem;
   --card-radius: 2rem;
 
   --shadow-card: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.12);

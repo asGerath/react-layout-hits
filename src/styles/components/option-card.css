@@ -3,9 +3,9 @@
     grid-template-columns: 2rem 1fr;
     gap: 2rem;
     padding: 2.4rem;
-    border: 0.1rem solid var(--color-border);
+    border: 0.1rem solid var(--color-borderCards);
     border-radius: 1.2rem;
-    background-color: var(--color-white);
+    background-color: var(--color-background-cards);
     cursor: pointer;
 }
 
@@ -32,14 +32,12 @@
 
     & .option-card__title {
         margin-bottom: 0.8rem;
-        font-size: 1.8rem;
         font-weight: 700;
         color: var(--color-text);
     }
 
     & .option-card__description {
         max-width: 58rem;
-        font-size: 1.4rem;
         line-height: 1.5;
         color: var(--color-muted);
     }

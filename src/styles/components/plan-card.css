@@ -4,11 +4,13 @@
     align-items: center;
     column-gap: 2.4rem;
     width: 100%;
+    min-height: 19.4rem;
     padding: 2.2rem 2.4rem;
-    border: 0.1rem solid var(--color-border);
+    border: 0.1rem solid var(--color-background);
     border-radius: 1.2rem;
-    background-color: var(--color-background);
+    background-color: var(--color-background-cards);
     cursor: pointer;
+    
 
     & .plan-card__radio {
         width: 1.8rem;
@@ -24,7 +26,7 @@
 
 .plan-card--selected {
     background-color: var(--color-bg-cards-active);
-    border-color: #d7eef2;
+    border-color: #D7EDEF;
 }
 /* 
 .plan-card__content {

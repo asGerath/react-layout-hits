@@ -7,9 +7,8 @@
 .personal-data-step__section-title {
   grid-column: 1 / -1;
   margin-top: 1.2rem;
-  font-size: 1.8rem;
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-textLabel);
 }
 
 @media (max-width: 768px) {

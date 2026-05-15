@@ -7,7 +7,9 @@ import { PersonalDataStep } from "../../components/steps/PersonalDataStep/Person
 import "../../styles/pages/hiring-flow.css";
 import shoppingBagIcon from "../../assets/icons/shopping-bag.svg";
 import archiveIcon from "../../assets/icons/archive.svg";
+import checkIcon from "../../assets/icons/check-square.svg";
 import { LineTypeStep } from "../../components/steps/LineTypeStep/LineTypeStep";
+import { PortabilityStep } from "../../components/steps/PortabilityStep/PortabilityStep";
 
 
 
@@ -29,12 +31,20 @@ const steps = [
     component: <PersonalDataStep />,
   },
   {
-    img: archiveIcon,
+    img: checkIcon,
     step: 3,
-    title: "Tipo de Línea",
+    title: "¡Activa a tu familia con Bolívar y Claro!",
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
     component: <LineTypeStep />,
+  },
+  {
+    img: checkIcon,
+    step: 4,
+    title: "Portabilidad Claro",
+    description:
+      "Recuerda: si eres usuario de otro operador y deseas portar tu número, la línea debe ser a tu nombre, estar al día en tus pagos y no puede estar suspendida",
+    component: <PortabilityStep />,
   },
 ];
 

@@ -32,8 +32,8 @@ export function OptionCard({
             <div className="option-card__content">
                 <div>
 
-                    <h3 className="option-card__title">{title}</h3>
-                    <p className="option-card__description">{description}</p>
+                    <h3 className="option-card__title fz-20">{title}</h3>
+                    <p className="option-card__description fz-16">{description}</p>
                 </div>
                 <figure className="option-card__image-container">
                     {img && <img src={img} alt={title} className="option-card__image" />}

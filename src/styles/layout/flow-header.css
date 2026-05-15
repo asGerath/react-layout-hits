@@ -11,7 +11,7 @@
     }
 
     & .flow-header__description {
-        /* max-width: 78rem; */
+        max-width: 84rem;
         color: var(--color-muted);
     }
 }

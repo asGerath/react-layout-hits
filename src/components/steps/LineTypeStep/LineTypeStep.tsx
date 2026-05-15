@@ -10,21 +10,21 @@ const lineOptions = [
     title: "Línea Nueva",
     description:
       "Si deseas un nuevo número y recibir una nueva Sim Card, elige esta opción.",
-    img: revers
+    img: empresasImg
   },
   {
     id: "claro-inclusion",
     title: "Inclusión Claro",
     description:
       "Si eres usuario actual de Claro (Postpago y Prepago) y quieres cambiar tu plan, elige esta opción.",
-    img: empresasImg
+    img: claroLogo
   },
   {
     id: "portability",
     title: "Portabilidad",
     description:
       "Si eres usuario de otro operador y deseas conservar tu número, elige esta opción.",
-    img: claroLogo
+    img: revers
   },
 ];
 

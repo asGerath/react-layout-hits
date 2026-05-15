@@ -7,21 +7,26 @@ const personalFields = [
     value: "Lorem Ipsum is simply",
   },
   {
+    label: "Número de Celular",
+    value: "Lorem Ipsum is simply",
+  },
+  {
     label: "Tipo de Documento",
+    value: "Selecciona un tipo",
+    as: "select" as const,
+    options: [
+      { label: "Ejemplo 1", value: "ejemplo1" },
+      { label: "Ejemplo 2", value: "ejemplo2" },
+    ],
+  },
+  {
+    label: "Número de Documento",
     value: "Lorem Ipsum is simply",
   },
   {
     label: "Correo Electrónico Corporativo",
     value: "Lorem Ipsum is simply",
     type: "email" as const,
-  },
-  {
-    label: "Número de Celular",
-    value: "Lorem Ipsum is simply",
-  },
-  {
-    label: "Número de Documento",
-    value: "Lorem Ipsum is simply",
   },
   {
     label: "Fecha de Nacimiento",
@@ -36,11 +41,11 @@ const addressFields = [
     value: "Lorem Ipsum is simply",
   },
   {
-    label: "Departamento",
+    label: "Ciudad / Municipio",
     value: "Lorem Ipsum is simply",
   },
   {
-    label: "Ciudad / Municipio",
+    label: "Departamento",
     value: "Lorem Ipsum is simply",
   },
   {
@@ -61,7 +66,7 @@ export function PersonalDataStep() {
         />
       ))}
 
-      <h3 className="personal-data-step__section-title">Domicilio</h3>
+      <h3 className="personal-data-step__section-title fz-20">Domicilio</h3>
 
       {addressFields.map((field) => (
         <FormField key={field.label} label={field.label} value={field.value} />
