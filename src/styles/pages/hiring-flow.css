@@ -1,14 +1,14 @@
 .hiring-flow {
-  padding: 4rem 2rem;
-}
+    padding: 4rem 2rem;
 
-.hiring-flow__actions {
-  display: flex;
-  justify-content: flex-end;
-  width: min(100%, var(--container-width));
-  margin: 3.2rem auto 0;
-}
+    & .hiring-flow__actions {
+        display: flex;
+        justify-content: flex-end;
+        width: min(100%, var(--container-width));
+        margin: 3.2rem auto 0;
+    }
 
-.hiring-flow__actions--between {
-  justify-content: space-between;
+    & .hiring-flow__actions--between {
+        justify-content: space-between;
+    }
 }
