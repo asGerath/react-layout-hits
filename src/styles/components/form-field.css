@@ -1,0 +1,22 @@
+.form-field {
+    display: block;
+
+    & .form-field__label {
+        display: block;
+        margin-bottom: 0.8rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--color-text);
+    }
+
+    & .form-field__input {
+        width: 100%;
+        min-height: 4.4rem;
+        padding: 0 1.6rem;
+        border: 0.1rem solid var(--color-border);
+        border-radius: 0.8rem;
+        font-size: 1.4rem;
+        color: var(--color-muted);
+        background-color: var(--color-white);
+    }
+}

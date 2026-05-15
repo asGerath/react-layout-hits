@@ -1,22 +1,23 @@
-import shoppingBagIcon from "../../../assets/icons/shopping-bag.svg";
 import "../../../styles/layout/step-layout.css";
 
 type StepLayoutProps = {
+    img: string;
     step: number;
     title: string;
     description: string;
     children: React.ReactNode;
 };
 
-export function StepLayout({ step, title, description, children }: StepLayoutProps) {
+export function StepLayout({ img, step, title, description, children }: StepLayoutProps) {
     return (
         <section className="step-layout">
             <aside className="step-layout__sidebar">
 
 
                 <div className="step-layout__info">
+        
                     <div className="step-layout__icon" aria-hidden="true">
-                        <img src={shoppingBagIcon} alt="" />
+                        <img src={img} alt="" />
                     </div>
 
                     <span className="step-layout__step fz-16">Paso {step}</span>

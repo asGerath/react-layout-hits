@@ -5,9 +5,13 @@ import { Button } from "../../components/ui/Button/Button";
 import { AssignedPlanStep } from "../../components/steps/AssignedPlanStep/AssignedPlanStep";
 import { PersonalDataStep } from "../../components/steps/PersonalDataStep/PersonalDataStep";
 import "../../styles/pages/hiring-flow.css";
+import shoppingBagIcon from "../../assets/icons/shopping-bag.svg";
+import archiveIcon from "../../assets/icons/archive.svg";
+
 
 const steps = [
   {
+    img: shoppingBagIcon,
     step: 1,
     title: "Plan Asignado",
     description:
@@ -15,6 +19,7 @@ const steps = [
     component: <AssignedPlanStep />,
   },
   {
+    img: archiveIcon,
     step: 2,
     title: "Datos Personales",
     description:
@@ -44,6 +49,7 @@ export function HiringFlow() {
       />
 
       <StepLayout
+        img={currentStepData.img}
         step={currentStepData.step}
         title={currentStepData.title}
         description={currentStepData.description}
