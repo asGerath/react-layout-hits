@@ -45,9 +45,18 @@ svg {
 .fz-16{
     font-size: 1.6rem;
 }
+.fz-20{
+    font-size: 2rem;
+}
 .fz-28{
     font-size: 2.8rem;
 }
 .fz-36{
     font-size: 3.6rem;
+}
+
+.plans-list{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
