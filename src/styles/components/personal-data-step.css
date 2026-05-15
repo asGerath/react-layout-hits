@@ -1,0 +1,18 @@
+.personal-data-step {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 2.4rem;
+}
+
+.personal-data-step__section-title {
+  grid-column: 1 / -1;
+  margin-top: 1.2rem;
+  font-weight: 700;
+  color: var(--color-textLabel);
+}
+
+@media (max-width: 768px) {
+  .personal-data-step {
+    grid-template-columns: 1fr;
+  }
+}

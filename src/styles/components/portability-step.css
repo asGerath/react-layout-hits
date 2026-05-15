@@ -1,0 +1,20 @@
+.portability-step {
+  max-width: 60rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & .portability-step__fields {
+    display: grid;
+    gap: 2rem;
+  }
+
+
+
+  & .portability-step__note {
+    margin-top: 2.4rem;
+    line-height: 1.45;
+    color: var(--color-text);
+  }
+}

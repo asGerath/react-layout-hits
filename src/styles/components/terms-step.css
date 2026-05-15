@@ -1,0 +1,23 @@
+.terms-step {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2.4rem;
+  & .terms-step__title {
+    font-weight: 700;
+    color: var(--color-text);
+  }
+  & .terms-step__content {
+    display: grid;
+    gap: 1.6rem;
+    overflow-y: auto;
+    line-height: 1.55;
+  }
+}
+
+
+.terms-step__checks {
+  display: grid;
+  gap: 1.2rem;
+  font-weight: 500;
+}

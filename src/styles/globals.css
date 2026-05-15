@@ -1,0 +1,80 @@
+@import "./base/variables.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--font-primary);
+  font-size: 1.6rem;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+.fz-16{
+    font-size: 1.6rem;
+}
+.fz-20{
+    font-size: 2rem;
+}
+.fz-24{
+    font-size: 2.4rem;
+}
+.fz-28{
+    font-size: 2.8rem;
+}
+.fz-32{
+    font-size: 3.2rem;
+}
+.fz-36{
+    font-size: 3.6rem;
+}
+.fw-600{
+    font-weight: 600;
+}
+.td-underline{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.plans-list{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.color-link{
+  color: var(--color-textLink);
+}
