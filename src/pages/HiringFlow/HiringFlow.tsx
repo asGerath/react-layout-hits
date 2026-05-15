@@ -12,8 +12,7 @@ import fileIcon from "../../assets/icons/file-text.svg";
 import { LineTypeStep } from "../../components/steps/LineTypeStep/LineTypeStep";
 import { PortabilityStep } from "../../components/steps/PortabilityStep/PortabilityStep";
 import { TermsStep } from "../../components/steps/TermsStep/TermsStep";
-
-
+import { SuccessStep } from "../../components/steps/SuccessStep/SuccessStep";
 
 const steps = [
   {
@@ -61,15 +60,28 @@ const steps = [
 export function HiringFlow() {
   const [currentStep, setCurrentStep] = useState(1);
 
+  const isSuccessStep = currentStep > steps.length;
   const currentStepData = steps[currentStep - 1];
 
   const handleNextStep = () => {
-    setCurrentStep((prevStep) => Math.min(prevStep + 1, steps.length));
+    setCurrentStep((prevStep) => prevStep + 1);
   };
 
   const handlePreviousStep = () => {
     setCurrentStep((prevStep) => Math.max(prevStep - 1, 1));
   };
+
+  const handleRestart = () => {
+    setCurrentStep(1);
+  };
+
+  if (isSuccessStep) {
+    return (
+      <main className="hiring-flow">
+        <SuccessStep onRestart={handleRestart} />
+      </main>
+    );
+  }
 
   return (
     <main className="hiring-flow">
@@ -98,11 +110,9 @@ export function HiringFlow() {
           </Button>
         )}
 
-        {/* <Button onClick={handleNextStep}>Siguiente</Button>
-         */}
-         <Button onClick={handleNextStep}>
-  {currentStep === steps.length ? "Finalizar" : "Siguiente"}
-</Button>
+        <Button onClick={handleNextStep}>
+          {currentStep === steps.length ? "Finalizar" : "Siguiente"}
+        </Button>
       </div>
     </main>
   );
