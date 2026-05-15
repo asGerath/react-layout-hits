@@ -1,0 +1,53 @@
+.option-card {
+    display: grid;
+    grid-template-columns: 2rem 1fr;
+    gap: 2rem;
+    padding: 2.4rem;
+    border: 0.1rem solid var(--color-border);
+    border-radius: 1.2rem;
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+
+/* .option-card:not(:last-child) {
+  margin-bottom: 2.4rem;
+} */
+
+.option-card--selected {
+    background-color: #edf9fb;
+    border-color: #d7eef2;
+}
+
+.option-card__radio {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-top: 0.4rem;
+    accent-color: var(--color-accent);
+}
+
+.option-card__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    & .option-card__title {
+        margin-bottom: 0.8rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--color-text);
+    }
+
+    & .option-card__description {
+        max-width: 58rem;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: var(--color-muted);
+    }
+
+    & .option-card__image-container {
+        width: 5rem;
+        display: flex;
+        align-items: center;
+
+    }
+}

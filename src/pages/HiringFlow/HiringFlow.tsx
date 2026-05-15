@@ -7,6 +7,8 @@ import { PersonalDataStep } from "../../components/steps/PersonalDataStep/Person
 import "../../styles/pages/hiring-flow.css";
 import shoppingBagIcon from "../../assets/icons/shopping-bag.svg";
 import archiveIcon from "../../assets/icons/archive.svg";
+import { LineTypeStep } from "../../components/steps/LineTypeStep/LineTypeStep";
+
 
 
 const steps = [
@@ -25,6 +27,14 @@ const steps = [
     description:
       "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
     component: <PersonalDataStep />,
+  },
+  {
+    img: archiveIcon,
+    step: 3,
+    title: "Tipo de Línea",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC.",
+    component: <LineTypeStep />,
   },
 ];
 
