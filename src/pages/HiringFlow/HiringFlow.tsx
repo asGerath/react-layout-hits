@@ -8,8 +8,10 @@ import "../../styles/pages/hiring-flow.css";
 import shoppingBagIcon from "../../assets/icons/shopping-bag.svg";
 import archiveIcon from "../../assets/icons/archive.svg";
 import checkIcon from "../../assets/icons/check-square.svg";
+import fileIcon from "../../assets/icons/file-text.svg";
 import { LineTypeStep } from "../../components/steps/LineTypeStep/LineTypeStep";
 import { PortabilityStep } from "../../components/steps/PortabilityStep/PortabilityStep";
+import { TermsStep } from "../../components/steps/TermsStep/TermsStep";
 
 
 
@@ -45,6 +47,14 @@ const steps = [
     description:
       "Recuerda: si eres usuario de otro operador y deseas portar tu número, la línea debe ser a tu nombre, estar al día en tus pagos y no puede estar suspendida",
     component: <PortabilityStep />,
+  },
+  {
+    img: fileIcon,
+    step: 5,
+    title: "Aceptación de Términos",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+    component: <TermsStep />,
   },
 ];
 
@@ -88,7 +98,11 @@ export function HiringFlow() {
           </Button>
         )}
 
-        <Button onClick={handleNextStep}>Siguiente</Button>
+        {/* <Button onClick={handleNextStep}>Siguiente</Button>
+         */}
+         <Button onClick={handleNextStep}>
+  {currentStep === steps.length ? "Finalizar" : "Siguiente"}
+</Button>
       </div>
     </main>
   );

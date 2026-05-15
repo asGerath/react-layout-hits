@@ -55,9 +55,20 @@ svg {
 .fz-36{
     font-size: 3.6rem;
 }
+.fw-600{
+    font-weight: 600;
+}
+.td-underline{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .plans-list{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.color-link{
+  color: var(--color-textLink);
 }
